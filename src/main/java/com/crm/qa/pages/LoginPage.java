@@ -1,5 +1,6 @@
 package com.crm.qa.pages;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -17,7 +18,10 @@ public class LoginPage extends TestBase{
 	WebElement password;
 	
 	@FindBy(xpath="//input[@type='submit']")
+	//JavascriptExecutor js=(JavascriptExecutor)driver;
+	//js.executeScript("arguments[0].click()", loginBtn);
 	WebElement loginBtn;
+	
 	
 	@FindBy(xpath="//button[contains(text(),'Sign Up')]")
 	WebElement signUpBtn;

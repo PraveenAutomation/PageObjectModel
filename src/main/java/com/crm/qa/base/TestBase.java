@@ -38,13 +38,15 @@ public class TestBase {
 		{
 			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+ "/driver/chromedriver.exe");
 			driver = new ChromeDriver();
+			//driver=new FirefoxDriver();
+			
 		}
 		else if(browserName.equalsIgnoreCase("Firefox")){
 				System.setProperty("webdriver.gecko.driver", "/Users/naveenkhunteta/Documents/SeleniumServer/geckodriver.exe");	
 				driver = new FirefoxDriver(); 
 		}
 		
-		driver.manage().window().maximize();
+		//driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().pageLoadTimeout(TestUtil.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
