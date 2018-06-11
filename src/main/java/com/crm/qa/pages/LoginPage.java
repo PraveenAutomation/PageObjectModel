@@ -17,12 +17,13 @@ public class LoginPage extends TestBase{
 	@FindBy(name="password")
 	WebElement password;
 	
-	@FindBy(xpath="//input[@type='submit']")
-	//JavascriptExecutor js=(JavascriptExecutor)driver;
-	//js.executeScript("arguments[0].click()", loginBtn);
+	@FindBy(xpath = "//input[@type='submit']")
+
 	WebElement loginBtn;
-	
-	
+
+/*	JavascriptExecutor js = (JavascriptExecutor) driver;
+	js.executeScript("arguments[0].click();", loginBtn);*/
+
 	@FindBy(xpath="//button[contains(text(),'Sign Up')]")
 	WebElement signUpBtn;
 	
@@ -50,7 +51,7 @@ public class LoginPage extends TestBase{
 	{
 		username.sendKeys(un);
 		password.sendKeys(pwd);
-		loginBtn.click();
+		loginBtn.submit();
 		
 		return new HomePage();
 	}
