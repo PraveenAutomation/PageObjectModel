@@ -1,6 +1,5 @@
 package com.crm.qa.pages;
 
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -11,10 +10,10 @@ public class LoginPage extends TestBase{
 	
 	//PageFactory - OR
 	
-	@FindBy(name="username")
+	@FindBy(name="username11")
 	WebElement username;
 	
-	@FindBy(name="password")
+	@FindBy(name="password11")
 	WebElement password;
 	
 	@FindBy(xpath = "//input[@type='submit']")
