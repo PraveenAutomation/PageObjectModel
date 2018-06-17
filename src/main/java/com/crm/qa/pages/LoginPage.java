@@ -10,10 +10,10 @@ public class LoginPage extends TestBase{
 	
 	//PageFactory - OR
 	
-	@FindBy(name="username11")
+	@FindBy(name="username")
 	WebElement username;
 	
-	@FindBy(name="password11")
+	@FindBy(name="password")
 	WebElement password;
 	
 	@FindBy(xpath = "//input[@type='submit']")

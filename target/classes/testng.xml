@@ -2,6 +2,12 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
 <suite name= "Free CRM Application Test Automation suite"> 
+
+	<listeners>
+		<listener class-name="com.qa.ExtentReportListener.ExtentReporterNG" />
+	</listeners>
+
+
 <test name="Free CRM App Test Cases">
 <classes>
 
@@ -12,3 +18,4 @@
 </classes>
 </test>
 </suite>
+
